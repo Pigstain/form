@@ -1,16 +1,28 @@
 body{
-    background-color: black
+    display:flex;
+    background-color: white
     height: 100vh;
     width: 100vw;
     overflow:hidden;
-    display:flex;
+    
     flex-direction: row;
+  
+    
 
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width:50vw;
+    verflow:hidden;
+    background-size: contain;
+   flex-direction: row;
+   
 }
 
 .img{
     display:flex;
-    width: 50%;
+    width: 100%;
     height: 100%;
     margin:1% 1% 1% 1%;
     
@@ -18,16 +30,96 @@ body{
     background: url(./halie-west-25xggax4bSA-unsplash.jpg) no-repeat 
     center
     ;
+    background-size: cover;
     
+    margin-top: -10px;
+    margin-left: -9px;
     justify-content: center;
     align-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 .img-info{
     display: flex;
     justify-content: center ;
     align-items:flex-end;
 }
-.disc{
+
+.img-description{
+   
+    
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 100%;
+    font-weight: 900;
+    text-shadow: -1px -1px 0 white,1px -1px 0 white,-1px 1px 0 white, 1px 1px 0 white;
+}
+.form{  
+   
+    width: 40vw;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    
+}
+.form > *{
+    
+
+}
+.form-info{
+    text-align: start;
+}
+.form-label{
+    font-weight: 900;
+    font-size: 20px;
+    display: block;
+    transition: all 0.5s;
+    transform: translateY(-3.4rem);
+}
+.form-input{
+    border: 2px solid gray;
+    color: #333;
+    font-size: 1.2rem;
+    padding:0.2rem 0.2rem;
+    border-radius: 0.2rem;
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+    margin-top: 5%;
+    padding-right: 10%;
+}
+.form-input:focus{
+    transition: 0.2s;
+    outline: none;
+    border: 2px solid blue;
+}
+.form-input:placeholder-shown + .form-label{
+    opacity: 0;
+    visibility: hidden;
+}
+.inputs{
+    
+    width:80%;
+    justify-content: space-evenly;
+}
+.inputs > :last-child{
+    padding-left: 10%;
+}
+.form-end{
+
+    display: block;
+}
+.input-container{
     display: flex;
-    text-align: center;
+    flex-direction: column;
+
+    align-items: baseline;
+    
+  
+   
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
